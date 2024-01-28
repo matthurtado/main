@@ -1,0 +1,134 @@
+/*
+ * Custom CSS
+ */
+
+body {
+  background-color: #0d0818 !important;
+}
+.page-wrapper {
+  margin-left: 10%;   /* Adjust the value as needed */
+  margin-right: 10%;  /* Adjust the value as needed */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Navbar site title */
+.bg-custom {
+  background-color: #4716b7; /* Example color: light purple */
+  padding: 5px 10px; /* Add some padding */
+  border-radius: 25px !important;
+}
+
+.navbar,
+.carousel,
+.dropdown-menu,
+.btn-secondary {
+  background-color: #0d0818 !important;
+}
+.navbar-brand {
+    margin-left: -12px; /* Adjust this value as needed */
+}
+/* Change the text color of navbar links to white */
+.navbar-nav .nav-link  {
+  color: white;
+}
+
+/* Custom styles for dropdown items */
+.navbar .dropdown-menu .dropdown-item {
+    color: white !important; /* Change dropdown item text color to white */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    color: #a020f0 !important; /* Bright purple color on hover */
+    background-color: transparent !important; /* Keep the background the same */
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* Center align the text within the three columns below the carousel */
+.projects .col-lg-3,
+.projects .col-lg-6 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* rtl:begin:ignore */
+.projects .col-lg-3 p,
+.projects .col-lg-6 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Container bg color */
+.container.projects {
+  color: white;
+}
+
+/* rtl:end:ignore */
+
+/* CSS for desktop */
+.column-dividers .col-lg-3:not(:first-child),
+.column-dividers .col-lg-6:not(:first-child) {
+  border-left: 1px solid #4716b7;
+  /* Light grey border */
+}
+
+.column-dividers .col-lg-3:not(:last-child),
+.column-dividers .col-lg-6:not(:last-child) {
+  border-right: 1px solid #4716b7;
+}
+
+/* Shout out to all my Skeletors */
+.modal-caption {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1000px) {
+  .column-dividers .col-lg-3,
+  .column-dividers .col-lg-6 {
+    border-left: none !important; /* forcefully remove left border for mobile */
+    border-right: none !important; /* forcefully remove right border for mobile */
+    border-bottom: 1px solid #4716b7; /* add horizontal bottom border */
+    padding-bottom: 1rem; /* add some padding at the bottom */
+  }
+
+  .column-dividers .col-lg-3:last-child,
+  .column-dividers .col-lg-6:last-child {
+    border-bottom: none; /* remove bottom border from the last element */
+  }
+}
