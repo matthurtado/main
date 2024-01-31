@@ -128,8 +128,15 @@ body {
   }
 }
 .modal-content {
+  background-color: transparent;
   border: 2px solid #ff69b4; /* Pink border */
   animation: glow 1s infinite alternate; /* Apply the glow animation */
+  border-radius: 10px; /* Rounded corners for the modal */
+  overflow: hidden; /* Ensures the content respects the border radius */
+}
+
+.modal-content img {
+  border-radius: 10px; /* Apply the same radius to the image */
 }
 
 .modal-caption {
