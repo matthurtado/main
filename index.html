@@ -13,37 +13,47 @@
 <body>
   <div class="page-wrapper">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-
-        <img class="navbar-brand" src="images/logo.png" alt="Matt Hurtado Logo" height="50"> <!-- Adjust height as needed -->
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Links
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://www.linkedin.com/in/matt-hurtado/"
-                    target="_blank">LinkedIn</a></li>
-                <li><a class="dropdown-item" href="https://wjffradio.org/" target="_blank">Virtual Soundscapes</a></li>
-              </ul>
-            </li>
-          </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12"> <!-- Full-width column -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container"> <!-- Changed from container-fluid to container -->
+              <img class="navbar-brand" src="images/logo.png" alt="Matt Hurtado Logo" height="50">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Links
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/matt-hurtado/"
+                          target="_blank">LinkedIn</a></li>
+                      <li><a class="dropdown-item" href="https://wjffradio.org/" target="_blank">Virtual Soundscapes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
-    </nav>
+    </div>    
     <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/carousel.png" class="d-block w-100" alt="First slide">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/carousel.png" class="d-block w-100" alt="First slide">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -77,8 +77,6 @@ body {
 .carousel-title {
   text-shadow: 2px 8px 3px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, blur-radius, color */
   font-weight: bolder;
-itial;
-e-3d;
   transform-style: preserve-3d;
 }
 
