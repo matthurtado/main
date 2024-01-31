@@ -48,6 +48,11 @@ body {
     background-color: transparent !important; /* Keep the background the same */
 }
 
+.navbar-nav .bi {
+  margin-right: 8px; /* Adds spacing between icon and text */
+  /* Additional styles (color, size, etc.) can be added here */
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -114,11 +119,45 @@ body {
 }
 
 /* Shout out to all my Skeletors */
+@keyframes glow {
+  0%, 100% {
+      box-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
+  }
+  50% {
+      box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  }
+}
+.modal-content {
+  border: 2px solid #ff69b4; /* Pink border */
+  animation: glow 1s infinite alternate; /* Apply the glow animation */
+}
+
 .modal-caption {
   text-align: center;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #0d0818;
   color: white;
+}
+
+.skeletor-link {
+  color: white; /* White color */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Define the pulsing animation */
+@keyframes pulse {
+  0%, 100% {
+      text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  }
+  50% {
+      text-shadow: 0 0 15px #f5b6d6, 0 0 30px #f5b6d6, 0 0 45px #f5b6d6;
+  }
+}
+
+/* Apply the pulsing effect on hover */
+.skeletor-link:hover {
+  color: #ff69b4; /* Bright pink color on hover */
+  animation: pulse 1s infinite; /* Apply the pulse animation */
 }
 
 /* Media query for mobile devices */
