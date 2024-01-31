@@ -5,9 +5,11 @@
 body {
   background-color: #0d0818 !important;
 }
+
+/* Border around page  */
 .page-wrapper {
-  margin-left: 10%;   /* Adjust the value as needed */
-  margin-right: 10%;  /* Adjust the value as needed */
+  margin-left: 10%; 
+  margin-right: 10%;  
   padding: 20px;
   margin-top: 20px;
 }
@@ -19,14 +21,17 @@ body {
   border-radius: 25px !important;
 }
 
+/* Navbar background color  */
 .navbar,
 .carousel,
 .dropdown-menu,
 .btn-secondary {
   background-color: #0d0818 !important;
 }
+
+/* Adjust the spacing on the logo */
 .navbar-brand {
-    margin-left: -12px; /* Adjust this value as needed */
+    margin-left: -12px;
 }
 /* Change the text color of navbar links to white */
 .navbar-nav .nav-link  {
@@ -65,14 +70,15 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-75%);
   bottom: initial;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
+.carousel-title {
+  text-shadow: 2px 8px 3px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, blur-radius, color */
+  font-weight: bolder;
+itial;
+e-3d;
   transform-style: preserve-3d;
 }
 
